@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('target_db', 'film_actors') }}

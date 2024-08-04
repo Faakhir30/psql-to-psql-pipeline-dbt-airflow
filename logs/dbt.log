@@ -1,0 +1,46 @@
+[0m01:21:50.235392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b308ccfd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b303b5f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b303b6550>]}
+
+
+============================== 01:21:50.242037 | cf13b523-70a4-4804-ab32-520c8bf7e3d8 ==============================
+[0m01:21:50.242037 [info ] [MainThread]: Running with dbt=1.8.4
+[0m01:21:50.242936 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/f/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:21:50.253867 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/f/.dbt')}
+[0m01:21:50.254660 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m01:22:25.278634 [debug] [MainThread]: Starter project path: /home/f/workspaces/de/hollywood_data_pipeline/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m01:22:25.282530 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:22:25.283251 [info ] [MainThread]: Setting up your profile.
+[0m01:25:24.959657 [info ] [MainThread]: Profile custom_postgres written to /home/f/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:25:24.964511 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 214.78972, "process_user_time": 1.617191, "process_kernel_time": 0.132097, "process_mem_max_rss": "92992", "process_in_blocks": "96", "process_out_blocks": "88"}
+[0m01:25:24.966804 [debug] [MainThread]: Command `dbt init` succeeded at 01:25:24.966429 after 214.79 seconds
+[0m01:25:24.968288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b304061d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b33c13710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x739b33b5d810>]}
+[0m01:25:24.969443 [debug] [MainThread]: Flushing usage events
+[0m01:31:06.164170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd55ade2290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd55902b7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd55902a0d0>]}
+
+
+============================== 01:31:06.167740 | 317f1ab8-6676-4899-b2c4-de2575e88b7d ==============================
+[0m01:31:06.167740 [info ] [MainThread]: Running with dbt=1.8.4
+[0m01:31:06.168631 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/f/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt compile', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:31:06.169408 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/f/workspaces/de/hollywood_data_pipeline/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m01:31:06.172952 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.06653171, "process_user_time": 1.443168, "process_kernel_time": 0.139919, "process_mem_max_rss": "88484", "process_in_blocks": "40", "process_out_blocks": "16", "command_success": false}
+[0m01:31:06.173766 [debug] [MainThread]: Command `dbt compile` failed at 01:31:06.173578 after 0.07 seconds
+[0m01:31:06.174452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd55c8f7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd559076910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bd559076990>]}
+[0m01:31:06.175080 [debug] [MainThread]: Flushing usage events
