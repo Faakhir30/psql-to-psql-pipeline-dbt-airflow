@@ -1,4 +1,5 @@
-FROM apache/airflow:2.0.1
+# Use the official Airflow image as the base
+FROM apache/airflow:latest
 
-# Install additional packages
+# Install the Docker provider for Airflow
 RUN pip install apache-airflow-providers-docker
